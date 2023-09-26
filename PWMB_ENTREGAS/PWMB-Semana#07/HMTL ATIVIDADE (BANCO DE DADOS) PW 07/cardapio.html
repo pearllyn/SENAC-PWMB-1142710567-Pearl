@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <title>
+         Cardapio Online
+      </title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="login.css">
+   </head>
+   <!-- HEADER -->
+   <body>
+      <header>
+         <nav>
+            <div class="evergane"><b>EVERGANE</b></div>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="menu.html">Menu</a>
+            <a href="cardapio.html">Cardapio Online</a>
+            <a id="ped-button" href="pedidos.html">Pedidos</a>
+            <a href="local.html">Horário e Local</a>
+            <a href="suporte.html">Suporte</a>
+            <a href="#login" onclick="mostrarLogin()">Login</a>
+         </nav>
+      </header>
+      <!-- CARDAPIO -->
+      <main class="cardapio-body">
+         <div class="cardapio-card">
+            <div class="menu-card">
+               <h1>Cardapio Evergane</h1>
+               <h2>Promoção</h2>
+               <ul>
+                  <li>
+                     <span class="prato">Promoção</span>
+                     <span class="descricao">Descrição.</span>
+                     <span class="preco">R$ 0.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Promoção</span>
+                     <span class="descricao">Descrição.</span>
+                     <span class="preco">R$ 0.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Promoção</span>
+                     <span class="descricao">Descrição.</span>
+                     <span class="preco">R$ 0.00</span>
+                  </li>
+               </ul>
+               <!-- PRATOS PRINCIPAIS -->
+               <h2>Pratos Principais</h2>
+               <ul>
+                  <li>
+                     <span class="prato">Pratos Principais</span>
+                     <span class="descricao">Descrição.</span>
+                     <span class="preco">R$ 0.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Pratos Principais</span>
+                     <span class="descricao">Descrição.</span>
+                     <span class="preco">R$ 0.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Pratos Principais</span>
+                     <span class="descricao">Descrição.</span>
+                     <span class="preco">R$ 0.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Pratos Principais</span>
+                     <span class="descricao">Descrição.</span>
+                     <span class="preco">R$ 0.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Pratos Principais</span>
+                     <span class="descricao">Descrição.</span>
+                     <span class="preco">R$ 0.00</span>
+                  </li>
+               </ul>
+            </div>
+            <!-- SOBREMESAS -->
+            <div class="menu-card">
+               <h2>Sobremesas</h2>
+               <ul>
+                  <li>
+                     <span class="prato">Sobremesas</span>
+                     <span class="descricao">Descrição.</span>
+                     <span class="preco">R$ 0.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Sobremesas</span>
+                     <span class="descricao">Descrição.</span>
+                     <span class="preco">R$ 0.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Sobremesas</span>
+                     <span class="descricao">Descrição.</span>
+                     <span class="preco">R$ 0.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Sobremesas</span>
+                     <span class="descricao">Descrição.</span>
+                     <span class="preco">R$ 0.00</span>
+                  </li>
+               </ul>
+               <!-- BEBIDAS -->
+               <h2>Bebidas</h2>
+               <ul>
+                  <li>
+                     <span class="prato">Bebidas</span>
+                     <span class="descricao">Descrição.</span>
+                     <span class="preco">R$ 0.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Bebidas</span>
+                     <span class="descricao">Descrição.</span>
+                     <span class="preco">R$ 0.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Bebidas</span>
+                     <span class="descricao">Descrição.</span>
+                     <span class="preco">R$ 0.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Bebidas</span>
+                     <span class="descricao">Descrição.</span>
+                     <span class="preco">R$ 0.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Bebidas</span>
+                     <span class="descricao">Descrição.</span>
+                     <span class="preco">R$ 0.00</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </main>
+      <!-- LOGIN -->
+      <div id="container-login">
+         <div id="caixa-login">
+            <span id="botao-fechar" onclick="fecharLogin()">X</span>
+            <h2>Login</h2>
+            <form>
+               <br><label for="nome">Nome:</label><br>
+               <input type="text" id="nome" name="nome" required>
+               <input type="email" placeholder="Email" id="email">
+               <input type="password" placeholder="Senha" id="senha">
+               <div id="email-validacao" style="color: red;"></div>
+               <div id="senha-validacao" style="color: red;"></div>
+               <button onclick="validarLogin()">Entrar</button>
+            </form>
+         </div>
+      </div>
+      <footer class="footer">
+         <p>E-mail: evergane@gmail.com Telefone: (11) 5682-7300  Instagram: @ever_gane</p>
+      </footer>
+      <script src="sticky-header.js"></script>
+      <script src="login-script.js"></script>
+   </body>
+</html>
