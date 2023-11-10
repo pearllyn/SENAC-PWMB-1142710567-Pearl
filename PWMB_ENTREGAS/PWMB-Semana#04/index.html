@@ -41,14 +41,47 @@
          <!-- MENU HOME -->
          <div class="sobre">
             <h3>Nosso Menu</h3>
-            <p>Bem-vindo ao Restaurante Vegano EVERGANE! <br>
-               Somos um novo restaurante vegano comprometido em oferecer refeições deliciosas,<br>
-               saudáveis e sustentáveis para todos os amantes de comida vegana.
+            <p>Os pratos do Evergane são uma verdadeira celebração da criatividade culinária, <br>
+               que vai muito além das saladas tradicionais. Aqui, você encontrará opções <br>
+               deliciosas que abraçam uma variedade de cozinhas do mundo, tudo preparado <br>
+               com ingredientes frescos e de alta qualidade.
             </p>
-            <a href="pedidos.html" class="btn">Faça seu pedido!</a> 
+            <a href="menu.html" class="btn">Faça seu pedido!</a> 
          </div>
+         <!-- SOBRE -->
+         <h1>Sobre Nós</h1>
+         <p>Bem-vindo ao Restaurante Vegano EVERGANE! <br>
+            Somos um novo restaurante vegano comprometido em oferecer refeições deliciosas,<br>
+            saudáveis e sustentáveis para todos os amantes de comida vegana.
+         </p>
+         <p>Nossa missão é proporcionar experiências gastronômicas excepcionais, combinando sabores naturais,<br>
+            ingredientes frescos e um toque de criatividade em todos os pratos que servimos.
+         </p>
+         <h4>Nossa Filosofia</h4>
+         <p>A filosofia do restaurante Evergane é alicerçada na crença de que 
+            a comida pode ser uma força positiva para o nosso planeta e para a 
+            saúde de todos. Buscamos promover a sustentabilidade, o respeito pelos animais 
+            e a diversidade culinária por meio de pratos veganos deliciosos e criativos. 
+            Acreditamos que a comida à base de plantas não apenas nutre o corpo, 
+            mas também nutre a alma, inspirando um estilo de vida mais consciente e saudável. 
+            No Evergane, nossa filosofia é uma celebração da natureza e uma ode à inovação culinária, 
+            convidando todos a experimentar a magia de uma alimentação vegana.
+         </p>
+         <h4>Nossos Pratos</h4>
+         <p>O Evergane é um restaurante vegano que oferece pratos deliciosos 
+            e criativos à base de plantas. Com ingredientes frescos e sustentáveis, 
+            suas opções vão muito além das saladas, incluindo hambúrgueres, massas e mais. 
+            É uma experiência gastronômica que celebra a diversidade de sabores e promove 
+            um estilo de vida sustentável. Venha desfrutar da culinária vegana no Evergane 
+            e descubra como a comida à base de plantas pode ser deliciosa e nutritiva.
+         </p>
+         <a href="local.html" class="visite-button">Visite-nos</a>
+         <p>Estamos ansiosos para recebê-lo em nosso restaurante e compartilhar o nosso amor pela comida vegana.<br>
+            Venha experimentar pratos incríveis que não apenas alimentam o corpo, mas também nutrem a alma.
+         </p>
          <!-- MENU -->
          <h1>Menu</h1>
+         <h2 id="menu">Faça seu Pedido</h2>
          <h3>Entradas</h3>
          <p>Entrada 1 - $0.00</p>
          <p>Descrição</p>
@@ -79,7 +112,27 @@
          <p>Descrição</p>
          <p>Bebida 3 - $0.00</p>
          <p>Descrição</p>
-         <a href="pedidos.html" class="btn">Faça seu pedido!</a> 
+         <h3>Preencha os detalhes do pedido</h3>
+         <form>
+            <label for="nome-cliente">Nome:</label>
+            <input type="text" id="nome-cliente" name="nome-cliente" required><br>
+            <label for="quantidade">Quantidade:</label>
+            <input type="number" id="quantidade" name="quantidade" required><br>
+            <label for="observacao">Observação:</label><br>
+            <textarea id="observacao" name="observacao"></textarea>
+            <br>
+            <label for="nome-pedido">Pedido selecionado:</label>
+            <input type="text" id="nome-pedido" name="nome" required readonly><br>
+            <label for="formaPagamento">Forma de Pagamento:</label>
+            <select id="formaPagamento" name="formaPagamento" required>
+               <option value="Cartao de credito">Cartão de crédito</option>
+               <option value="Cartao de debito">Cartão de débito</option>
+               <option value="Dinheiro">Dinheiro</option>
+               <option value="PIX">PIX</option>
+            </select>
+            <br>
+            <button class="form-button" type="submit">Enviar Pedido</button>
+         </form>
          <!-- CARDAPIO ONLINE -->
          <h1 id="cardapio">Cardápio Online</h1>
          <h3>Promoção</h3>
@@ -103,28 +156,9 @@
          <p>Bebida 3 - Descrição - $0.00</p>
          <p>Bebida 4 - Descrição - $0.00</p>
          <!-- PEDIDOS -->
-         <h1 id="pedidos">Faça seu Pedido</h1>
-         <div class="pedido-card">
-            <h3>Promoção</h3>
-            <div><input type="radio" name="item" value="item1"><img src="img/promo1.png" alt="Promocao 1 - Descricao - 0.00"></div>
-            <div><input type="radio" name="item" value="item2"><img src="img/promo2.png" alt="Promocao 2 - Descricao - 0.00"></div>
-            <div><input type="radio" name="item" value="item3"><img src="img/promo3.png" alt="Promocao 3 - Descricao - 0.00"></div>
-            <h3>Pratos Prinicipais</h3>
-            <div><input type="radio" name="item" value="item1"><img src="img/prato1.png" alt="Prato 1 - Descricao - 0.00"></div>
-            <div><input type="radio" name="item" value="item2"><img src="img/prato2.png" alt="Prato 2 - Descricao - 0.00"></div>
-            <div><input type="radio" name="item" value="item3"><img src="img/prato3.png" alt="Prato 3 - Descricao - 0.00"></div>
-            <div><input type="radio" name="item" value="item4"><img src="img/prato4.png" alt="Prato 4 - Descricao - 0.00"></div>
-            <h3>Sobremesas</h3>
-            <div><input type="radio" name="item" value="item1"><img src="img/sobremesa.png" alt="Sobremesa 1 - Descricao - 0.00"></div>
-            <div><input type="radio" name="item" value="item2"><img src="img/sobremesa.png" alt="Sobremesa 2 - Descricao - 0.00"></div>
-            <h3>Bebidas</h3>
-            <div><input type="radio" name="item" value="item1"><img src="img/bebida1.png" alt="Bebida 1 - Descricao - 0.00"></div>
-            <div><input type="radio" name="item" value="item2"><img src="img/bebida2.png" alt="Bebida 2 - Descricao - 0.00"></div>
-         </div>
-         <h4>Observações:</h4>
-         <textarea name="observacoes" rows="4" cols="50"></textarea>
-         <br>
-         <input type="submit" value="Ir para pagamento">
+         <h1 id="pedidos">Pedidos</h1>
+         <h4>Agradecemos pelo seu pedido!</h4>
+         <h4>Aguarde pelo seu pedido.</h4>
          <!--- HORARIOS E ENDEREÇOS-->
          <h2 id="local">Horários</h2>
          <p> das 10:00 horas a 22:00 horas</p>
