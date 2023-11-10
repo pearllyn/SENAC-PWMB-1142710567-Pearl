@@ -1,0 +1,70 @@
+nav{
+display: flex;
+align-items: center;
+}
+main{
+height: auto;
+}
+*{
+margin: 0 auto;
+}
+header, nav, main, footer{
+width: auto;
+padding: 10px 20px;
+box-sizing: border-box;
+}
+.evergane{
+color: #000000;
+margin-left: 70px;
+font-weight: 1000;
+font-size: 180%;
+padding: 5px;
+}
+nav a{
+text-decoration: none;
+font-size: 115%;
+font-weight: 800;
+padding: 5px;
+margin-inline: 15px;
+}
+nav a:hover{
+background-color: #000000;
+color: rgb(255, 255, 255);
+}
+/* HORARIOS E LOCAL */
+.horarios-local{
+display: flex;
+justify-content: space-between;
+height: inherit;
+}
+.imagem-local{
+width: 300px;
+max-height: 100vh;
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/imagem-fundo.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: left left;
+text-align: left;
+margin-left: 30px;
+font-size: small;
+padding: 80px 80px;
+}
+.local{
+text-align: left;
+padding: 15% 10%;
+}
+.local a#local-button{
+font-size: small;
+padding: 5px;
+text-decoration: none;
+border: 2px solid #000000;
+}
+.local a#local-button:hover{
+color: #ffffff;
+background-color: #000000;
+}
+/*FOOTER*/
+.footer{
+padding: 20px 30px;
+text-align: right;
+}

@@ -2,10 +2,10 @@
 <html lang="pt-br">
    <head>
       <title>
-         Menu
+         Fazer Pedido
       </title>
       <meta charset="utf-8">
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="menu.css">
    </head>
    <!-- HEADER -->
    <body>
@@ -16,122 +16,274 @@
             <a href="sobre.html">Sobre</a>
             <a href="menu.html">Menu</a>
             <a href="cardapio.html">Cardapio Online</a>
-            <a id="ped-button" href="pedidos.html">Pedidos</a>
+            <a href="pedidos.html">Pedidos</a>
             <a href="local.html">Horário e Local</a>
             <a href="suporte.html">Suporte</a>
             <a href="login.html">Login</a>
          </nav>
       </header>
       <!-- MENU -->
+      <div class="imagem">
+         <h1>MENU</h1>
+         <p>Comida 100% vegana!</p>
+         <br>
+      </div>
       <main class="menu">
-         <h1>Menu</h1>
+         <!-- ICONS -->
+         <div class="icons-container">
+            <a href="#promo" class="button">Promoção</a>
+            <a href="#entradas" class="button">Entradas</a>
+            <a href="#pratos" class="button">Pratos Principais</a>
+            <a href="#saladas" class="button">Saladas</a>
+            <a href="#sobremesas" class="button">Sobremesas</a>
+            <a href="#bebidas" class="button">Bebidas</a>
+         </div>
          <div class="menu-box">
-            <div class="menu-href">
-               <a id="menu-entradas" href="#entradas">Entradas</a>
-               <a id="menu-pratos" href="#pratos">Pratos Prinicipais</a>
-               <a id="menu-sobremesas" href="#sobremesas">Sobremesas</a>
-               <a id="menu-bebidas" href="#bebidas">Bebidas</a>
-            </div>
-            <!-- ENTRADAS -->
-            <h1 id="entradas">Entradas</h1>
-            <div class="menu-item">
-               <img src="img/entrada.jpg" alt="Entrada 1">
-               <div>
-                  <h2>Entrada 1</h2>
-                  <p>Descrição.</p>
+            <h1>Faça seu Pedido!</h1>
+            <div id="promo" class="nome-categoria">Promoção</div>
+            <div class="category-container">
+               <div class="category-item">
+                  <input type="radio" id="promo1" name="opcao" value="promo1">
+                  <div class="option-label">
+                     <img class="food-image" src="img/promocao.png" alt="Promoção 1">
+                     <div class="food-info">
+                        <span class="food-name">Promoção 1</span>
+                        <p class="food-description">Descrição</p>
+                        <span class="price">R$0.00</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <input type="radio" id="promo2" name="opcao" value="promo2">
+                  <div class="option-label">
+                     <img class="food-image" src="img/promocao.png" alt="Promoção 2">
+                     <div class="food-info">
+                        <span class="food-name">Promoção 2</span>
+                        <p class="food-description">Descrição</p>
+                        <span class="price">R$0.00</span>
+                     </div>
+                  </div>
                </div>
             </div>
-            <div class="menu-item">
-               <img src="img/entrada.jpg" alt="Entrada 2">
-               <div>
-                  <h2>Entrada 2</h2>
-                  <p>Descrição.</p>
+            <div id="entradas" class="nome-categoria">Entradas</div>
+            <div class="category-container">
+               <div class="category-item">
+                  <input type="radio" id="entrada1" name="opcao" value="entrada1">
+                  <div class="option-label">
+                     <img class="food-image" src="img/entradas.png" alt="Entrada 1">
+                     <div class="food-info">
+                        <span class="food-name">Entrada 1</span>
+                        <p class="food-description">Descrição</p>
+                        <span class="price">R$0.00</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <input type="radio" id="entrada2" name="opcao" value="entrada2">
+                  <div class="option-label">
+                     <img class="food-image" src="img/entradas.png" alt="Entrada 2">
+                     <div class="food-info">
+                        <span class="food-name">Entrada 2</span>
+                        <p class="food-description">Descrição</p>
+                        <span class="price">R$0.00</span>
+                     </div>
+                  </div>
                </div>
             </div>
-            <div class="menu-item">
-               <img src="img/entrada.jpg" alt="Entrada 3">
-               <div>
-                  <h2>Entrada 3</h2>
-                  <p>Descrição.</p>
+            <div id="pratos" class="nome-categoria">Pratos Principais</div>
+            <div class="category-container">
+               <div class="category-item">
+                  <input type="radio" id="prato1" name="opcao" value="prato1">
+                  <div class="option-label">
+                     <img class="food-image" src="img/pratos.png" alt="Prato 1">
+                     <div class="food-info">
+                        <span class="food-name">Prato Principal 1</span>
+                        <p class="food-description">Descrição</p>
+                        <span class="price">R$0.00</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <input type="radio" id="prato2" name="opcao" value="prato2">
+                  <div class="option-label">
+                     <img class="food-image" src="img/pratos.png" alt="Prato 2">
+                     <div class="food-info">
+                        <span class="food-name">Prato Principal 2</span>
+                        <p class="food-description">Descrição</p>
+                        <span class="price">R$0.00</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <input type="radio" id="prato3" name="opcao" value="prato3">
+                  <div class="option-label">
+                     <img class="food-image" src="img/pratos.png" alt="Prato 3">
+                     <div class="food-info">
+                        <span class="food-name">Prato Principal 3</span>
+                        <p class="food-description">Descrição</p>
+                        <span class="price">R$0.00</span>
+                     </div>
+                  </div>
                </div>
             </div>
-            <!-- PRATOS PRINCIPAIS -->
-            <h1 id="pratos">Pratos Principais</h1>
-            <div class="menu-item">
-               <img src="img/prato.jpg" alt="Prato Vegano 1">
-               <div>
-                  <h2>Prato Vegano 1</h2>
-                  <p>Descrição.</p>
+            <div class="category-container">
+               <div class="category-item">
+                  <input type="radio" id="prato4" name="opcao" value="prato4">
+                  <div class="option-label">
+                     <img class="food-image" src="img/pratos.png" alt="Prato 4">
+                     <div class="food-info">
+                        <span class="food-name">Prato Principal 4</span>
+                        <p class="food-description">Descrição</p>
+                        <span class="price">R$0.00</span>
+                     </div>
+                  </div>
                </div>
             </div>
-            <div class="menu-item">
-               <img src="img/prato.jpg" alt="Prato Vegano 2">
-               <div>
-                  <h2>Prato Vegano 2</h2>
-                  <p>Descrição.</p>
+            <div id="saladas" class="nome-categoria">Saladas</div>
+            <div class="category-container">
+               <div class="category-item">
+                  <input type="radio" id="salada1" name="opcao" value="salada1">
+                  <div class="option-label">
+                     <img class="food-image" src="img/salad.png" alt="Salada 1">
+                     <div class="food-info">
+                        <span class="food-name">Salada 1</span>
+                        <p class="food-description">Descrição</p>
+                        <span class="price">R$0.00</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <input type="radio" id="salada2" name="opcao" value="salada2">
+                  <div class="option-label">
+                     <img class="food-image" src="img/salad.png" alt="Salada 2">
+                     <div class="food-info">
+                        <span class="food-name">Salada 2</span>
+                        <p class="food-description">Descrição</p>
+                        <span class="price">R$0.00</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <input type="radio" id="salada3" name="opcao" value="salada3">
+                  <div class="option-label">
+                     <img class="food-image" src="img/salad.png" alt="Salada 3">
+                     <div class="food-info">
+                        <span class="food-name">Salada 3</span>
+                        <p class="food-description">Descrição</p>
+                        <span class="price">R$0.00</span>
+                     </div>
+                  </div>
                </div>
             </div>
-            <div class="menu-item">
-               <img src="img/prato.jpg" alt="Prato Vegano 3">
-               <div>
-                  <h2>Prato Vegano 3</h2>
-                  <p>Descrição.</p>
+            <div id="sobremesas" class="nome-categoria">Sobremesas</div>
+            <div class="category-container">
+               <div class="category-item">
+                  <input type="radio" id="sobremesa1" name="opcao" value="sobremesa1">
+                  <div class="option-label">
+                     <img class="food-image" src="img/sobremesa.png" alt="Sobremesa 1">
+                     <div class="food-info">
+                        <span class="food-name">Sobremesa 1</span>
+                        <p class="food-description">Descrição</p>
+                        <span class="price">R$0.00</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <input type="radio" id="sobremesa2" name="opcao" value="sobremesa2">
+                  <div class="option-label">
+                     <img class="food-image" src="img/sobremesa.png" alt="Sobremesa 2">
+                     <div class="food-info">
+                        <span class="food-name">Sobremesa 2</span>
+                        <p class="food-description">Descrição</p>
+                        <span class="price">R$0.00</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <input type="radio" id="sobremesa3" name="opcao" value="sobremesa3">
+                  <div class="option-label">
+                     <img class="food-image" src="img/sobremesa.png" alt="Sobremesa 3">
+                     <div class="food-info">
+                        <span class="food-name">Sobremesa 3</span>
+                        <p class="food-description">Descrição</p>
+                        <span class="price">R$0.00</span>
+                     </div>
+                  </div>
                </div>
             </div>
-            <div class="menu-item">
-               <img src="img/prato.jpg" alt="Prato Vegano 4">
-               <div>
-                  <h2>Prato Vegano 4</h2>
-                  <p>Descrição.</p>
+            <div class="category-container">
+               <div class="category-item">
+                  <input type="radio" id="sobremesa4" name="opcao" value="sobremesa4">
+                  <div class="option-label">
+                     <img class="food-image" src="img/sobremesa.png" alt="Sobremesa 4">
+                     <div class="food-info">
+                        <span class="food-name">Sobremesa 4</span>
+                        <p class="food-description">Descrição</p>
+                        <span class="price">R$0.00</span>
+                     </div>
+                  </div>
                </div>
             </div>
-            <!-- SOBREMESA -->
-            <h1 id="sobremesas">Sobremesas</h1>
-            <div class="menu-item">
-               <img src="img/sobremesa.jpg" alt="Sobremesa 1">
-               <div>
-                  <h2>Sobremesa 1</h2>
-                  <p>Descrição.</p>
+            <div id="bebidas" class="nome-categoria">Bebidas</div>
+            <div class="category-container">
+               <div class="category-item">
+                  <input type="radio" id="bebida1" name="opcao" value="bebida1">
+                  <div class="option-label">
+                     <img class="food-image" src="img/bebida.png" alt="Bebida 1">
+                     <div class="food-info">
+                        <span class="food-name">Bebida 1</span>
+                        <p class="food-description">Descrição</p>
+                        <span class="price">R$0.00</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <input type="radio" id="bebida2" name="opcao" value="bebida2">
+                  <div class="option-label">
+                     <img class="food-image" src="img/bebida.png" alt="Bebida 2">
+                     <div class="food-info">
+                        <span class="food-name">Bebida 2</span>
+                        <p class="food-description">Descrição</p>
+                        <span class="price">R$0.00</span>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <input type="radio" id="bebida3" name="opcao" value="bebida3">
+                  <div class="option-label">
+                     <img class="food-image" src="img/bebida.png" alt="Bebida 3">
+                     <div class="food-info">
+                        <span class="food-name">Bebida 3</span>
+                        <p class="food-description">Descrição</p>
+                        <span class="price">R$0.00</span>
+                     </div>
+                  </div>
                </div>
             </div>
-            <div class="menu-item">
-               <img src="img/sobremesa.jpg" alt="Sobremesa 2">
-               <div>
-                  <h2>Sobremesa 2</h2>
-                  <p>Descrição.</p>
-               </div>
+            <!-- FORM -->
+            <div class="form-pedido">
+               <h3>Preencha os detalhes do pedido</h3>
+               <form>
+                  <label for="nome-cliente">Nome:</label>
+                  <input type="text" id="nome-cliente" name="nome-cliente" required><br>
+                  <label for="quantidade">Quantidade:</label>
+                  <input type="number" id="quantidade" name="quantidade" required><br>
+                  <label for="observacao">Observação:</label><br>
+                  <textarea id="observacao" name="observacao"></textarea>
+                  <br>
+                  <label for="nome-pedido">Pedido selecionado:</label>
+                  <input type="text" id="nome-pedido" name="nome" required readonly><br>
+                  <label for="formaPagamento">Forma de Pagamento:</label>
+                  <select id="formaPagamento" name="formaPagamento" required>
+                     <option value="Cartao de credito">Cartão de crédito</option>
+                     <option value="Cartao de debito">Cartão de débito</option>
+                     <option value="Dinheiro">Dinheiro</option>
+                     <option value="PIX">PIX</option>
+                  </select>
+                  <br>
+                  <button class="form-button" type="submit">Enviar Pedido</button>
+               </form>
             </div>
-            <div class="menu-item">
-               <img src="img/sobremesa.jpg" alt="Sobremesa 3">
-               <div>
-                  <h2>Sobremesa 3</h2>
-                  <p>Descrição.</p>
-               </div>
-            </div>
-            <div class="menu-item">
-               <img src="img/sobremesa.jpg" alt="Sobremesa 4">
-               <div>
-                  <h2>Sobremesa 4</h2>
-                  <p>Descrição.</p>
-               </div>
-            </div>
-            <!-- BEBIDA -->
-            <h1 id="bebidas">Bebidas</h1>
-            <div class="menu-item">
-               <img src="img/bebida.jpg" alt="Bebida 2">
-               <div>
-                  <h2>Bebida 1</h2>
-                  <p>Descrição.</p>
-               </div>
-            </div>
-            <div class="menu-item">
-               <img src="img/bebida.jpg" alt="Bebida 2">
-               <div>
-                  <h2>Bebida 2</h2>
-                  <p>Descrição.</p>
-               </div>
-            </div>
-            <a href="pedidos.html" class="menu-button">Faça seu pedido!</a>
          </div>
       </main>
       <footer class="footer">
