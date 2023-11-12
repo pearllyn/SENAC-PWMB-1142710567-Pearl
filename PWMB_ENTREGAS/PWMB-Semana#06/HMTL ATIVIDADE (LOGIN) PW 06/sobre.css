@@ -1,0 +1,108 @@
+nav{
+display: flex;
+align-items: center;
+}
+main{
+height: auto;
+}
+*{
+margin: 0 auto;
+}
+header, nav, main, footer{
+width: auto;
+padding: 10px 20px;
+box-sizing: border-box;
+}
+.evergane{
+color: #000000;
+margin-left: 70px;
+font-weight: 1000;
+font-size: 180%;
+padding: 5px;
+}
+nav a{
+text-decoration: none;
+font-size: 115%;
+font-weight: 800;
+padding: 5px;
+margin-inline: 15px;
+}
+nav a:hover{
+background-color: #000000;
+color: rgb(255, 255, 255);
+}
+.sticky {
+background-color: #ffffff;
+padding: 10px;
+text-align: right;
+position: sticky;
+top: 0; 
+z-index: 100; 
+}
+.sobre{
+width: auto;
+text-align: left;
+padding: 5% 9%;
+height: inherit;
+}
+.sobrenos-box{
+text-align: center;
+}
+.sobrenos-box h1{
+font-size: 400%;
+font-weight: bolder;
+}
+.box{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.filoso{
+flex: 1;
+}
+.pratos{
+flex: 1;
+text-align: left;
+}
+.image{
+flex: 1;
+}
+.image img{
+height: 300px;
+}
+.image-left{
+flex: 1;
+}
+.image-left img{
+height: 300px;
+}
+.visite-box{
+height: 20vh;
+padding: 30px;
+margin-top: 60px;
+background-image: linear-gradient(rgba(0, 0, 0, 0.233), rgba(0, 0, 0, 0.281)), url('img/imagem');
+}
+.visite-box p{
+padding: 10px;
+text-align: center;
+}
+.visite-button{
+font-family: Arial, Helvetica, sans-serif;
+font-size: large;
+padding: 5px;
+text-decoration: none;
+border: 1px solid #000000;
+display: flex;
+align-items: center;
+width: fit-content;
+margin-top: 60px;
+}
+.visite-button:hover{
+color: #ffffff;
+font-weight: 500;
+background-color: #00000044;
+}
+.footer{
+padding: 20px 30px;
+text-align: right;
+}

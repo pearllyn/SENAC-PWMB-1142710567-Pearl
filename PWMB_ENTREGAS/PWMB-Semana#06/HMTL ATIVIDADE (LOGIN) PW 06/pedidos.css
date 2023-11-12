@@ -1,0 +1,51 @@
+nav{
+display: flex;
+align-items: center;
+}
+main{
+height: auto;
+}
+*{
+margin: 0 auto;
+}
+header, nav, main, footer{
+width: auto;
+padding: 10px 20px;
+box-sizing: border-box;
+}
+.evergane{
+margin-left: 70px;
+font-weight: 1000;
+font-size: 180%;
+padding: 5px;
+}
+nav a{
+text-decoration: none;
+font-size: 115%;
+font-weight: 800;
+padding: 5px;
+margin-inline: 15px;
+}
+nav a:hover{
+background-color: #000000;
+color: rgb(255, 255, 255);
+}
+.sticky {
+background-color: #ffffff;
+padding: 10px;
+text-align: right;
+position: sticky;
+top: 0; 
+z-index: 100; 
+}
+.pedido{
+height: 500px;
+}
+h1{
+margin-bottom: 10px;
+}
+/*FOOTER*/
+.footer{
+padding: 20px 30px;
+text-align: right;
+}

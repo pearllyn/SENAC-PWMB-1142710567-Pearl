@@ -1,0 +1,106 @@
+nav{
+display: flex;
+align-items: center;
+}
+main{
+height: auto;
+}
+*{
+margin: 0 auto;
+}
+header, nav, main, footer{
+width: auto;
+padding: 10px 20px;
+box-sizing: border-box;
+}
+.evergane{
+color: #000000;
+margin-left: 70px;
+font-weight: 1000;
+font-size: 180%;
+padding: 5px;
+}
+nav a{
+text-decoration: none;
+font-size: 115%;
+font-weight: 800;
+padding: 5px;
+margin-inline: 15px;
+}
+nav a:hover{
+background-color: #000000;
+color: rgb(255, 255, 255);
+}
+.sticky {
+background-color: #ffffff;
+padding: 10px;
+text-align: right;
+position: sticky;
+top: 0; 
+z-index: 100; 
+}
+/* CARDAPIO ONLINE */
+.cardapio-body{
+width: auto;
+padding: 50px;
+box-sizing: border-box;
+font-weight: 100;
+font-size: small;
+}
+.cardapio-card h1{
+font-size: 70px;
+font-weight: 100;
+}
+.menu-card h2{
+margin-top: 30px;
+}
+.menu-container{
+list-style: none; 
+padding: 0;
+}
+.menu-card {
+margin-top: 20px;
+display: inline-block;
+margin-right: 10px;
+padding: 5px;
+}
+.cardapio-card h1 {
+margin: 0;
+}
+.cardapio-card{
+margin: 20px auto;
+padding: 20px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+width: 600px;
+}
+.menu-card{
+flex-basis: 45%; 
+}
+.menu-card ul {
+list-style: none;
+padding: 0;
+}
+.menu-card li {
+margin: 10px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.prato{
+font-weight: 700px;
+font-size: medium;
+}
+.descricao{
+font-style: italic;
+}
+.preco{
+font-weight: bold;
+}
+/*FOOTER*/
+.footer{
+padding: 20px 30px;
+text-align: right;
+}
