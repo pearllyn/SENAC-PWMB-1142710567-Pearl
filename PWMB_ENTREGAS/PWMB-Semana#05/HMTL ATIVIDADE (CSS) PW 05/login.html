@@ -24,19 +24,19 @@
          </nav>
       </header>
       <!-- LOGIN -->
-      <main class="login">
-      <div id="container-login">
-         <div id="caixa-login">
-            <h2>Login</h2>
-            <form>
-               <br><label for="nome">Nome:</label><br>
-               <input type="text" id="nome" name="nome" required><br><br>
-               <input type="email" placeholder="Email" id="email"><br><br>
-               <input type="password" placeholder="Senha" id="senha"><br><br>
-               <button>Entrar</button>
-            </form>
+      <main>
+         <div id="modal-login" class="modal">
+            <div id="container-login">
+               <h2>Login</h2>
+               <form id="formulario-login">
+                  <label for="nome-usuario">Nome de Usuário:</label>
+                  <input type="text" id="nome-usuario" name="nome-usuario" required>
+                  <label for="senha">Senha:</label>
+                  <input type="password" id="senha" name="senha" required>
+                  <button type="button">Entrar</button>
+               </form>
+            </div>
          </div>
-      </div>
-    </main>
+      </main>
    </body>
 </html>
