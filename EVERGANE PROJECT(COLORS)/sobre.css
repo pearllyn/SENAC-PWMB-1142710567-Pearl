@@ -1,0 +1,162 @@
+header{
+    background-color: #000000;
+    height: 11vh;
+    box-shadow: 2px 2px 5px 5px rgba(29, 41, 25, 0.137);
+}
+nav{
+    display: flex;
+    align-items: center;
+    }
+    *{
+    margin: 0 auto;
+    }
+    header, nav, main, footer{
+    width: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    }
+    .evergane{
+    color: #7FFF00;
+    margin-left: 70px;
+    font-weight: 1000;
+    font-size: 180%;
+    padding: 5px;
+    }
+    nav a#sobre-button{
+    background-color: #7FFF00;
+    color: #000000;
+    }
+    nav a#sobre-button:hover{
+    border: 1px solid #7FFF00;
+    background-color: transparent;
+    color: #7FFF00;
+    }
+    nav a#login-button{
+    color: blue;
+    background-color: #00c3ff2d;
+    border: 1px solid blue;
+    }
+    nav a#login-button:hover{
+        color: white;
+        background-color: blue;
+        border: 2px solid rgb(78, 78, 255);
+    }
+    nav{
+        margin-top: -5px;
+        margin-bottom: 8px;
+    }
+    nav a{
+    color: #7FFF00;
+    text-decoration: none;
+    font-size: 75%;
+    font-weight: 900;
+    padding: 5px;
+    margin-inline: 15px;
+    text-transform: uppercase;
+    }
+    nav a:hover{
+    background-color: #7FFF00;
+    color: black;
+    }
+    nav{
+    display: flex;
+    align-items: center;
+    }
+    .sticky {
+        padding: 10px;
+        text-align: right;
+        position: sticky;
+        top: 0; 
+        z-index: 100; 
+        height: 10vh;
+    }
+    .sobre{
+    width: auto;
+    text-align: left;
+    color: black;
+    padding: 5% 9%;
+    height: inherit;
+    background-color: #7FFF00;
+    }
+    .sobrenos-box{
+        text-align: center;
+    }
+    .sobrenos-box h1{
+    font-size: 400%;
+    font-weight: bolder;
+    }
+    .box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .filoso{
+        flex: 1;
+    }
+    .pratos{
+        flex: 1;
+        text-align: left;
+    }
+    .image{
+        flex: 1;
+    }
+    .image img{
+        height: 300px;
+    }
+    .image-left{
+        flex: 1;
+    }
+    .image-left img{
+        height: 300px;
+    }
+    .visite-box{
+        height: 20vh;
+        padding: 30px;
+        margin-top: 60px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.493)), url('img/restaurante.webp');
+    }
+    .visite-box p{
+        padding: 10px;
+        text-align: center;
+        color: #ffffff;
+    }
+    .visite-button{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        padding: 5px;
+        color: #ffffff;
+        text-decoration: none;
+        border: 1px solid #ffffff;
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        margin-top: 60px;
+    }
+    .visite-button:hover{
+        color: #000000;
+        font-weight: 500;
+        background-color: #ffffff44;
+    }
+    .footer{
+        background-color: #000000;
+        color: #7FFF00;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2px;
+        font-size: 90%;
+        font-weight: 900;
+        height: 80px;
+    }
+        footer a {
+        text-decoration: none;
+        }
+        .icons{
+         display: flex;
+         justify-items: left;
+         gap: 10px;
+        }
+        .footer-text {
+            text-align: right;
+        }
+    

@@ -1,0 +1,305 @@
+header{
+    background-color: #000000;
+    height: 11vh;
+    box-shadow: 2px 2px 5px 5px rgba(29, 41, 25, 0.137);
+}
+nav{
+    display: flex;
+    align-items: center;
+    }
+    *{
+    margin: 0 auto;
+    }
+    header, nav, main, footer{
+    width: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    }
+    .sticky {
+        padding: 10px;
+        text-align: right;
+        position: sticky;
+        top: 0; 
+        z-index: 100; 
+        height: 10vh;
+    }
+    .evergane{
+    color: #7FFF00;
+    margin-left: 70px;
+    font-weight: 1000;
+    font-size: 180%;
+    padding: 5px;
+    }
+    nav a#menu-btn{
+    background-color: #7FFF00;
+    color: #000000;
+    }
+    nav a#menu-btn:hover{
+    border: 1px solid #7FFF00;
+    background-color: transparent;
+    color: #7FFF00;
+    }
+    nav a#login-button{
+    color: blue;
+    background-color: #00c3ff2d;
+    border: 1px solid blue;
+    }
+    nav a#login-button:hover{
+        color: white;
+        background-color: blue;
+        border: 2px solid rgb(78, 78, 255);
+    }
+    nav{
+        margin-top: -5px;
+        margin-bottom: 8px;
+    }
+    nav a{
+    color: #7FFF00;
+    text-decoration: none;
+    font-size: 75%;
+    font-weight: 900;
+    padding: 5px;
+    margin-inline: 15px;
+    text-transform: uppercase;
+    }
+    nav a:hover{
+    background-color: #7FFF00;
+    color: black;
+    }
+
+    /*MENU BODY*/
+    .menu{
+    background-color: rgb(255, 255, 255);
+    height: inherit;
+    }
+    .menu-box {
+        margin-top: 5px;
+        padding: 5px 90px;
+        width: auto;
+        background-color: rgb(255, 255, 255);
+    }
+    .menu-box h1{
+        color:#ff0000;
+        font-weight: 200px;
+        font-size: xx-large;
+        margin-top: 80px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .imagem{
+    width: auto;
+    max-height: 10vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.589), rgba(0, 0, 0, 0.596)), url('img/veganfood.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 80px 80px;
+    }
+    .imagem h1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 60px;
+    }
+    .imagem p{
+    color: #ffffff;
+    text-align: center;
+    font-size: medium;
+    }
+
+    /* ICONS PARA MENU*/
+    .icons-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        
+    }
+    .icon-container{
+        text-align: center;
+        margin: 0 10px;
+    }
+    .icon{
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+    #promo-icon{
+        background-color: yellow;
+    }#entrada-icon{
+        background-color: orange;
+    }#prato-icon{
+        background-color: darkred;
+    }#salada-icon{
+        background-color: #99e949;
+    }#sobremesa-icon{
+        background-color: rgb(97, 29, 12);
+    }#bebida-icon{
+        background-color: chocolate;
+    }
+    #promo-icon:hover{
+        background-color: rgb(255, 255, 68);
+    }#entrada-icon:hover{
+        background-color: rgb(255, 183, 49);
+    }#prato-icon:hover{
+        background-color: rgb(196, 0, 0);
+    }#salada-icon:hover{
+        background-color: #b4ff68;
+    }#sobremesa-icon:hover{
+        background-color: rgb(126, 37, 15);
+    }#bebida-icon:hover{
+        background-color: rgb(231, 122, 44);
+    }
+    .icon img{
+        max-width: 90%;
+        max-height: 90%;
+    }
+    .icon a{
+        text-decoration: none;
+    }
+    .button{
+        color: #000000;
+        border: none;
+        margin-top: 10px;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .button:hover{
+        color: blue;
+        text-decoration: none;
+    }
+    /*PEDIDOS*/
+        .category-item label{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border: 1px solid rgb(173, 173, 173);
+            padding: 7px;
+            border-radius: 30px;
+            background-color: white;
+            box-shadow: 2px 2px 2px 2px rgba(177, 177, 177, 0.137);
+        }
+        .category-item label:hover{
+            box-shadow: 2px 2px 5px 5px rgba(110, 110, 110, 0.137);
+        }
+        input[type="radio"]{
+            display: none;
+        }
+        .option-label{
+            display: flex;
+            align-items: center;
+        }
+        .food-image{
+            width: 70px;
+            height: 70px;
+            margin-right: 10px;
+        }
+        .food-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .food-name {
+            font-size: 18px;
+        }
+
+        .food-description {
+            margin-top: 5px;
+            font-size: small;
+        }
+
+        .price {
+            margin-top: 5px;
+            font-weight: bold;
+            color: blue;
+        }
+
+        .nome-categoria {
+            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            font-size: x-large;
+        }
+
+        .category-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .category-item {
+            flex: 0 0 18%;
+            margin: 1%;
+        }
+
+        #pedido-form {
+            display: none;
+            position: fixed;  /* Adicionado para fixar o formulário */
+            top: 42%;
+            left: 85%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(228, 228, 228, 0.253);
+            padding: 20px;
+            border: 2px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+            border-radius: 20px;
+        }
+        #pedido-form input, #pedido-form select{
+            margin-bottom: 5px;
+            border: 1px solid #858585;
+            height: 20px;
+        }
+        #pedido-form textarea{
+            margin-bottom: 5px;
+            border: 1px solid #858585;
+            height: 50px;
+        }
+        #close-button{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        #close-button:hover{
+            color: red;
+        }
+        .form-button {
+            margin-top: 15px;
+            background-color: blue;
+            color: white;
+            font-size: medium;
+        }
+        .form-button:hover{
+            background-color: rgb(23, 58, 255);
+            color: white;
+        }
+    /*FOOTER*/
+    .footer{
+        background-color: #000000;
+        color: #7FFF00;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2px;
+        font-size: 90%;
+        font-weight: 900;
+        height: 80px;
+    }
+    footer a {
+        text-decoration: none;
+    }
+    .icons{
+     display: flex;
+     justify-items: left;
+     gap: 10px;
+    }
+    .footer-text {
+        text-align: right;
+    }

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <style>
+        body {
+            text-align: left;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+
+        #mensagem-agradecimento {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #mensagem-preparacao {
+            font-size: 16px;
+            color: #888;
+            margin-bottom: 20px;
+        }
+
+        #lista-pedidos {
+            list-style: none;
+            padding: 0;
+        }
+
+        #lista-pedidos li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pedidos</h1>
+
+    <div id="mensagem-agradecimento">Agradecemos pelo seu pedido!</div>
+    <div id="mensagem-preparacao">Seu pedido está sendo preparado.</div>
+    
+    <ul id="lista-pedidos"></ul>
+
+    <script>
+        // Recupera o último pedido do localStorage
+        var ultimoPedido = localStorage.getItem("ultimoPedido");
+        if (ultimoPedido) {
+            var pedidoObj = JSON.parse(ultimoPedido);
+
+            // Cria um elemento li para cada informação do pedido
+            var listaPedidos = document.getElementById("lista-pedidos");
+            for (var key in pedidoObj) {
+                var li = document.createElement("li");
+                li.textContent = key + ": " + pedidoObj[key];
+                listaPedidos.appendChild(li);
+            }
+        } else {
+            // Se não houver pedidos anteriores, exibe uma mensagem
+            var mensagem = document.createElement("p");
+            mensagem.textContent = "Nenhum pedido anterior.";
+            document.body.appendChild(mensagem);
+        }
+    </script>
+</body>
+</html>
