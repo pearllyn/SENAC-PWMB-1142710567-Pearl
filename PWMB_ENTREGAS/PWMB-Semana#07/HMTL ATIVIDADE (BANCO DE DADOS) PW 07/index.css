@@ -1,0 +1,100 @@
+nav{
+display: flex;
+align-items: center;
+}
+main{
+height: auto;
+}
+*{
+margin: 0 auto;
+}
+header, nav, main, footer{
+width: auto;
+padding: 10px 20px;
+box-sizing: border-box;
+}
+.evergane{
+color: #000000;
+margin-left: 70px;
+font-weight: 1000;
+font-size: 180%;
+padding: 5px;
+}
+nav a{
+text-decoration: none;
+font-size: 115%;
+font-weight: 800;
+padding: 5px;
+margin-inline: 15px;
+}
+nav a:hover{
+background-color: #000000;
+color: rgb(255, 255, 255);
+}
+.sticky {
+background-color: #ffffff;
+padding: 10px;
+text-align: right;
+position: sticky;
+top: 0; 
+z-index: 100; 
+}
+.home{
+width: auto;
+height: 20px;
+text-align: center;
+font-size: small;
+background-color: rgb(235, 235, 235);
+padding: 235px 235px;
+}
+.home-text{
+margin-top: -80px;
+text-align: center;
+font-size: 70px;
+font-weight: bold;
+}
+.home p{
+font-size: 20px;
+}
+.home-button{
+display: inline-block;
+padding: 5px;
+text-decoration: none;
+font-size: 18px;
+margin-top: 20px;
+font-family: Arial, Helvetica, sans-serif;
+border: 2px solid #000000;
+}
+.home-button:hover{
+color: #ffffff;
+background-color: #000000;
+}
+.sobre-button, .homepedido-button{
+font-size: small;
+padding: 5px;
+text-decoration: none;
+border: 2px solid #000000;
+}
+.sobre-button:hover, .homepedido-button:hover{
+color: #ffffff;
+background-color: #000000;
+}
+/* SCROLL HOME */
+.sobre-home{
+width: auto;
+text-align: left;
+padding: 5% 9%;
+height: fit-content;
+}
+.sobre-box{
+padding: 5px;
+height: fit-content;
+}
+.menu-box-home{
+padding: 5px;
+height: fit-content;
+}
+.footer{
+padding: 20px 30px;
+text-align: right;
+}

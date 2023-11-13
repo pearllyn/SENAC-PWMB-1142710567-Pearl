@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <title>
+         Informações do pedido
+      </title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="pedidos.css">
+      <link rel="stylesheet" href="login.css">
+   </head>
+   <!-- HEADER -->
+   <body>
+      <header>
+         <nav>
+            <div class="evergane"><b>EVERGANE</b></div>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="menu.html">Menu</a>
+            <a href="cardapio.html">Cardapio Online</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="local.html">Horário e Local</a>
+            <a href="suporte.html">Suporte</a>
+            <a href="#login" onclick="exibirFormularioLogin()">Login</a>
+         </nav>
+      </header>
+      <!--- PEDIDOS LISTA -->
+      <main class="pedido">
+         <div class="pedido-box">
+            <h1>Pedidos</h1>
+            <hr>
+            <div class="text-box">
+               <ul id="lista-pedidos"></ul>
+            </div>
+         </div>
+         <a class="pedido-button" href="menu.html">Realizar pedido</a>
+      </main>
+      <!-- LOGIN -->
+      <div id="modal-login" class="modal">
+         <div id="container-login">
+            <span class="close-button" onclick="esconderFormularioLogin()">&times;</span>
+            <h2>Login</h2>
+            <form id="formulario-login">
+               <label for="nome-usuario">Nome de Usuário:</label>
+               <input type="text" id="nome-usuario" name="nome-usuario" required>
+               <label for="senha">Senha:</label>
+               <input type="password" id="senha" name="senha" required onkeypress="tratarTeclaPressionada(event)">
+               <button type="button" onclick="validarLogin()">Entrar</button>
+            </form>
+            <p id="mensagem-bem-vindo" style="display:none;"></p>
+         </div>
+      </div>
+      <!-- FOOTER -->
+      <footer class="footer">
+         <p>E-mail: evergane@gmail.com Telefone: (11) 5682-7300</p>
+      </footer>
+      <script src="sticky-header.js"></script>
+      <script src="login-script.js"></script>
+      <script src="pedidos-ul.js"></script>
+   </body>
+</html>
