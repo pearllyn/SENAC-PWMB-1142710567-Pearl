@@ -1,0 +1,187 @@
+header{
+background-color: #000000;
+height: 11vh;
+box-shadow: 2px 2px 5px 5px rgba(29, 41, 25, 0.137);
+}
+nav{
+display: flex;
+align-items: center;
+}
+*{
+margin: 0 auto;
+}
+header, nav, main, footer{
+width: auto;
+padding: 10px 20px;
+box-sizing: border-box;
+}
+.sticky {
+padding: 10px;
+text-align: right;
+position: sticky;
+top: 0; 
+z-index: 100; 
+height: 10vh;
+}
+.logos{
+display: flex;
+justify-content: space-between;
+margin-left: 25px;
+}
+.logo{
+width: 45px;
+height: 45px;
+}
+.evergane{
+color: #7FFF00;
+font-weight: 1000;
+font-size: 180%;
+padding: 5px;
+}
+nav a#card-button{
+background-color: #7FFF00;
+color: black;
+}
+nav a#card-button:hover{
+border: 1px solid #7FFF00;
+background-color: transparent;
+color: #7FFF00;
+}
+nav a#login-button{
+color: blue;
+background-color: #00c3ff2d;
+border: 1px solid blue;
+}
+nav a#login-button:hover{
+color: white;
+background-color: blue;
+border: 2px solid rgb(78, 78, 255);
+}
+nav{
+margin-top: -5px;
+margin-bottom: 8px;
+}
+nav a{
+color: #7FFF00;
+text-decoration: none;
+font-size: 75%;
+font-weight: 900;
+padding: 5px;
+margin-inline: 15px;
+text-transform: uppercase;
+}
+nav a:hover{
+background-color: #7FFF00;
+color: black;
+}
+/* CARDAPIO ONLINE */
+.cardapio-body{
+background-color: #7FFF00;
+width: auto;
+height: fit-content;
+padding: 20px;
+box-sizing: border-box;
+font-weight: 100;
+font-size: small;
+background-size: 40%;
+background-repeat: repeat;
+background-position: center;
+background-image: linear-gradient(#80ff00ad, #80ff00b2), url('img/background\ leaves.png');
+}
+.cardapio-card h1{
+font-size: 75px;
+font-weight: bolder;
+color: #000000;
+font-weight: 100;
+text-align: center;
+}
+.menu-card h2{
+color: rgb(255, 255, 255);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
+margin-bottom: 30px;
+background-color: #000000;
+font-size: x-large;
+}
+.menu-container{
+list-style: none; 
+padding: 0;
+}
+.menu-card {
+margin: 20px;
+display: inline-block;
+margin-right: 10px;
+border: 1px solid rgba(94, 94, 94, 0.308);
+padding: 5px;
+background-color: rgba(255, 255, 255, 0.795);
+}
+.cardapio-card h1 {
+margin: 0;
+}
+.cardapio-card{
+margin: 80px auto;
+background-image: linear-gradient(rgba(255, 255, 255, 0.849), rgba(255, 255, 255, 0.849)), url('img/leafround.png');
+padding: 20px;
+border: 10px solid rgb(0, 0, 0);
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+width: fit-content;
+}
+.menu-card{
+flex-basis: 45%; 
+}
+.menu-card ul {
+list-style: none;
+padding: 0;
+}
+.menu-card li {
+margin: 20px 0px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.prato{
+font-weight: 500;
+font-size: large;
+text-align: left;
+}
+.descricao{
+font-style: italic;
+}
+.preco{
+font-weight: bold;
+color: #009688;
+font-size: medium;
+}
+.imagem-card{
+margin-top: 60px;
+width: 100%;
+height: 270px;
+display: flex;
+justify-content: center;
+}
+/*FOOTER*/
+.footer{
+background-color: #000000;
+color: #7FFF00;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 2px;
+font-size: large;
+font-weight: 900;
+height: 80px;
+}
+footer a{
+text-decoration: none;
+}
+.icons{
+display: flex;
+justify-items: left;
+gap: 20px;
+}
+.footer-text {
+text-align: right;
+}

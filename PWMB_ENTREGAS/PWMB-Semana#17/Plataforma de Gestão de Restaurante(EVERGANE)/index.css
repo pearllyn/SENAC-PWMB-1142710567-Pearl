@@ -1,0 +1,193 @@
+header{
+background-color: #000000;
+height: 11vh;
+box-shadow: 2px 2px 5px 5px rgba(29, 41, 25, 0.137);
+}
+nav{
+display: flex;
+align-items: center;
+}
+*{
+margin: 0 auto;
+}
+header, nav, main, footer{
+width: auto;
+padding: 10px 20px;
+box-sizing: border-box;
+}
+.sticky {
+padding: 10px;
+text-align: right;
+position: sticky;
+top: 0; 
+z-index: 100; 
+height: 10vh;
+}
+.logos{
+display: flex;
+justify-content: space-between;
+margin-left: 25px;
+}
+.logo{
+width: 45px;
+height: 45px;
+}
+.evergane{
+color: #7FFF00;
+font-weight: 1000;
+font-size: 180%;
+padding: 5px;
+}
+nav a#home-button{
+background-color: #7FFF00;
+color: #000000;
+}
+nav a#home-button:hover{
+border: 1px solid #7FFF00;
+background-color: transparent;
+color: #7FFF00;
+}
+nav a#login-button{
+color: blue;
+background-color: #00c3ff2d;
+border: 1px solid blue;
+}
+nav a#login-button:hover{
+color: white;
+background-color: blue;
+border: 2px solid rgb(78, 78, 255);
+}
+nav{
+margin-top: -5px;
+margin-bottom: 8px;
+}
+nav a{
+color: #7FFF00;
+text-decoration: none;
+font-size: 75%;
+font-weight: 900;
+padding: 5px;
+margin-inline: 15px;
+text-transform: uppercase;
+}
+nav a:hover{
+background-color: #7FFF00;
+color: black;
+}
+.green-line{
+background-color: rgb(158, 91, 28);
+height: 3px;
+}
+/* SLIDER */
+.slideshow-container{
+width: auto;
+height: 500px;
+position: relative;
+overflow: hidden;
+}
+.slide{
+display: none;
+}
+.slideshow-container img{
+width: 100%;
+height: 100%;
+}
+.home-text{
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+font-size: 36px;
+font-weight: bold;
+color: #fff;
+}
+.home-text p{
+color: white;
+font-size: 20px;
+}
+.home-button{
+display: inline-block;
+padding: 5px;
+text-decoration: none;
+border-radius: 5px;
+font-size: 18px;
+margin-top: 20px;
+font-family: Arial, Helvetica, sans-serif;
+color: #7FFF00;
+border: 2px solid #7FFF00;
+}
+.home-button:hover{
+color: #000000;
+background-color: #7FFF00;
+}
+.sobre-button,.homepedido-button{
+font-family: Arial, Helvetica, sans-serif;
+font-size: medium;
+padding: 5px;
+color: #000000;
+text-decoration: none;
+border: 2px solid #000000;
+font-weight: 500;
+}
+.sobre-button:hover, .homepedido-button:hover{
+color: #7FFF00;
+background-color: black;
+}
+/* SOBRE */
+.sobre-home{
+width: auto;
+text-align: left;
+padding: 5% 9%;
+color: black;
+height: fit-content;
+background-color: #7FFF00;
+background-size: 50%;
+background-repeat: repeat;
+background-position: 30%;
+background-image: linear-gradient(#80ff00ad, #80ff00b2), url('img/background\ leaves.png');
+}
+.sobre-home p{
+background-color: #7FFF00;
+font-weight: 500;
+font-size: large;
+}
+.sobre-box{
+padding: 5px;
+height: fit-content;
+}
+.menu-box-home{
+padding: 5px;
+height: fit-content;
+}
+.imagens-home img{
+width: 350px;
+height: 220px;
+}
+.sobre-home h1, .menu-home h1{
+margin-top: 40px;
+color: black;
+}
+/*FOOTER*/
+.footer{
+background-color: #000000;
+color: #7FFF00;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 2px;
+font-size: large;
+font-weight: 900;
+height: 80px;
+}
+footer a{
+text-decoration: none;
+}
+.icons{
+display: flex;
+justify-items: left;
+gap: 20px;
+}
+.footer-text {
+text-align: right;
+}

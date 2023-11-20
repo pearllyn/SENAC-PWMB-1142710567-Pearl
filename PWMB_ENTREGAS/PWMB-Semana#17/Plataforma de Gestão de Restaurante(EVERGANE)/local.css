@@ -1,0 +1,160 @@
+header{
+background-color: #000000;
+height: 11vh;
+box-shadow: 2px 2px 5px 5px rgba(29, 41, 25, 0.137);
+}
+nav{
+display: flex;
+align-items: center;
+}
+*{
+margin: 0 auto;
+}
+header, nav, main, footer{
+width: auto;
+padding: 10px 20px;
+box-sizing: border-box;
+}
+.sticky {
+padding: 10px;
+text-align: right;
+position: sticky;
+top: 0; 
+z-index: 100; 
+height: 10vh;
+}
+.logos{
+display: flex;
+justify-content: space-between;
+margin-left: 25px;
+}
+.logo{
+width: 45px;
+height: 45px;
+}
+.evergane{
+color: #7FFF00;
+font-weight: 1000;
+font-size: 180%;
+padding: 5px;
+}
+nav a#horario-button{
+background-color: #7FFF00;
+color: #000000;
+}
+nav a#horario-button:hover{
+border: 1px solid #7FFF00;
+background-color: transparent;
+color: #7FFF00;
+}
+nav a#login-button{
+color: blue;
+background-color: #00c3ff2d;
+border: 1px solid blue;
+}
+nav a#login-button:hover{
+color: white;
+background-color: blue;
+border: 2px solid rgb(78, 78, 255);
+}
+nav{
+margin-top: -5px;
+margin-bottom: 8px;
+}
+nav a{
+color: #7FFF00;
+text-decoration: none;
+font-size: 75%;
+font-weight: 900;
+padding: 5px;
+margin-inline: 15px;
+text-transform: uppercase;
+}
+nav a:hover{
+background-color: #7FFF00;
+color: black;
+}
+/* HORARIOS E LOCAL */
+.horarios-local{
+display: flex;
+justify-content: space-between;
+height: 1600px;
+background-color: #7FFF00;
+padding: 60px;
+background-size: 45%;
+background-repeat: repeat;
+background-position: 10%;
+background-image: linear-gradient(#80ff00ad, #80ff00b2), url('img/background\ leaves.png');
+}
+.imagem-local{
+margin: 30px;
+width: 390px;
+max-height: 100vh;
+background-image: url('img/restaurant.webp');
+background-size: cover;
+background-repeat: no-repeat;
+background-position: left left;
+text-align: left;
+margin-left: 30px;
+font-size: small;
+padding: 80px 80px;
+margin-top: 70px;
+}
+.local{
+text-align: left;
+margin-top: 180px;
+background-color: #7FFF00;
+height: fit-content;
+margin-right: 110px;
+}
+.local h2{
+color: #000000;
+font-size: 270%;
+font-weight: bolder;
+}
+.local h3{
+font-size: 250%;
+font-weight: bolder;
+}
+.local p{
+font-size: large;
+font-weight: 500;
+}
+.icon-local{
+margin-top: 50px;
+margin-bottom: 30px;
+}
+#local-button{
+padding: 5px 5px;
+border: 2px solid black;
+color: black;
+text-decoration: none;
+font-weight: 600;
+}
+#local-button:hover{
+background-color: #000000;
+color: #7FFF00;
+}
+/*FOOTER*/
+.footer{
+background-color: #000000;
+color: #7FFF00;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 2px;
+font-size: large;
+font-weight: 900;
+height: 80px;
+}
+footer a{
+text-decoration: none;
+}
+.icons{
+display: flex;
+justify-items: left;
+gap: 20px;
+}
+.footer-text {
+text-align: right;
+}

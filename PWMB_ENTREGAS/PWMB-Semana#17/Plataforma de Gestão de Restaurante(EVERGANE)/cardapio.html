@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <title>
+         Cardapio Online
+      </title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="cardapio.css">
+      <link rel="stylesheet" href="login.css">
+   </head>
+   <!-- HEADER -->
+   <body>
+      <header>
+         <nav>
+            <div class="logos">
+               <img class="logo" src="img/logo.png" alt="logo">
+               <div class="evergane"><b>EVERGANE</b></div>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a href="menu.html">Menu</a>
+            <a id="card-button" href="cardapio.html">Cardápio Online</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="local.html">Horário e Local</a>
+            <a href="suporte.html">Suporte</a>
+            <a id="login-button" href="#login" onclick="exibirFormularioLogin()">Login</a>
+         </nav>
+      </header>
+      <!-- CARDAPIO -->
+      <main class="cardapio-body">
+         <div class="cardapio-card">
+            <div class="menu-card">
+               <h1>Cardapio Evergane</h1>
+               <img class="imagem-card" src="img/cardpromo.jpg" alt="imagem card">
+               <h2>Promoção</h2>
+               <ul>
+                  <li>
+                     <span class="prato">Coxinha de frango</span>
+                     <span class="descricao"></span>
+                     <span class="preco">R$ 10.90</span>
+                  </li>
+                  <li>
+                     <span class="prato">Kafta</span>
+                     <span class="descricao">de carne moída</span>
+                     <span class="preco">R$ 18.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Spanakopita</span>
+                     <span class="descricao">de carne moída,<br>com cogumelos</span>
+                     <span class="preco">R$ 19.90</span>
+                  </li>
+               </ul>
+               <!-- PRATOS PRINCIPAIS -->
+               <img class="imagem-card" src="img/cardpratos.jpg" alt="imagem card">
+               <h2>Pratos Principais</h2>
+               <ul>
+                  <li>
+                     <span class="prato">Bife</span>
+                     <span class="descricao">com batatas noise<br>e legumes grelhados.</span>
+                     <span class="preco">R$ 27.50</span>
+                  </li>
+                  <li>
+                     <span class="prato">Macarrão ao molho</span>
+                     <span class="descricao">com pimenta tostado<br> com almôndegas.</span>
+                     <span class="preco">R$ 36.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Pulled Pork</span>
+                     <span class="descricao">com quiabo e<br>picles de rabanete</span>
+                     <span class="preco">R$ 28.32</span>
+                  </li>
+                  <li>
+                     <span class="prato">Rolinho Vietnamita</span>
+                     <span class="descricao">com tiras de frango,<br> cenoura, abobrinha, <br>e repolho roxo.</span>
+                     <span class="preco">R$ 37.78</span>
+                  </li>
+                  <li>
+                     <span class="prato">Hambúrguer <br>de frango vegetal</span>
+                     <span class="descricao">com maionese<br> de limão siciliano</span>
+                     <span class="preco">R$ 25.78</span>
+                  </li>
+               </ul>
+               <!-- SALADAS -->
+               <img class="imagem-card" src="img/cardsalada.jpg" alt="imagem card">
+               <h2>Saladas</h2>
+               <ul>
+                  <li>
+                     <span class="prato">Salada de macarrão<br>com molho</span>
+                     <span class="descricao">cremoso vegano</span>
+                     <span class="preco">R$ 30.78</span>
+                  </li>
+                  <li>
+                     <span class="prato">Salada</span>
+                     <span class="descricao">alface, tomate, cebola...</span>
+                     <span class="preco">R$ 20.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Salada de grão-de-bico</span>
+                     <span class="descricao">com macarrão</span>
+                     <span class="preco">R$ 30.80</span>
+                  </li>
+                  <li>
+                     <span class="prato">Salada com frango vegano</span>
+                     <span class="descricao">com 4 frangos empanados</span>
+                     <span class="preco">R$ 38.99</span>
+                  </li>
+               </ul>
+            </div>
+            <!-- SOBREMESAS -->
+            <div class="menu-card">
+               <img class="imagem-card" src="img/cardsobremesa.jpg" alt="imagem card">
+               <h2>Sobremesas</h2>
+               <ul>
+                  <li>
+                     <span class="prato">Amendoim caramelizado</span>
+                     <span class="descricao"></span>
+                     <span class="preco">R$ 10.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Pão de melado vegano</span>
+                     <span class="descricao"></span>
+                     <span class="preco">R$ 9.99</span>
+                  </li>
+                  <li>
+                     <span class="prato">Bolo de abóbora</span>
+                     <span class="descricao"></span>
+                     <span class="preco">R$ 10.99</span>
+                  </li>
+                  <li>
+                     <span class="prato">Brownie de abacate vegano</span>
+                     <span class="descricao"></span>
+                     <span class="preco">R$ 9.99</span>
+                  </li>
+               </ul>
+               <!-- BEBIDAS -->
+               <img class="imagem-card" src="img/cardbebida.jpg" alt="imagem card">
+               <h2>Bebidas</h2>
+               <ul>
+                  <li>
+                     <span class="prato">Milkshake</span>
+                     <span class="descricao">de Banana e Cacau</span>
+                     <span class="preco">R$ 18.90</span>
+                  </li>
+                  <li>
+                     <span class="prato">Cha de Hibisco</span>
+                     <span class="descricao">com tangerina e canela</span>
+                     <span class="preco">R$ 17.99</span>
+                  </li>
+                  <li>
+                     <span class="prato">Suco de laranja</span>
+                     <span class="descricao">natural sem açucar</span>
+                     <span class="preco">R$ 15.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Suco de Maracujá</span>
+                     <span class="descricao">com Couve.</span>
+                     <span class="preco">R$ 15.00</span>
+                  </li>
+                  <li>
+                     <span class="prato">Suco de maçã</span>
+                     <span class="descricao">natural</span>
+                     <span class="preco">R$ 17.00</span>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </main>
+      <!-- LOGIN -->
+      <div id="modal-login" class="modal">
+         <div id="container-login">
+            <span class="close-button" onclick="esconderFormularioLogin()">&times;</span>
+            <h2>Login</h2>
+            <form id="formulario-login">
+               <label for="nome-usuario">Nome de Usuário:</label>
+               <input type="text" id="nome-usuario" name="nome-usuario" required>
+               <label for="senha">Senha:</label>
+               <input type="password" id="senha" name="senha" required onkeypress="tratarTeclaPressionada(event)">
+               <button type="button" onclick="validarLogin()">Entrar</button>
+            </form>
+            <p id="mensagem-bem-vindo" style="display:none;"></p>
+         </div>
+      </div>
+      <footer class="footer">
+         <div class="icons">
+            <a href="#" id="instagramIcon">
+            <img src="img/insta.png" alt="Instagram Icon">
+            </a>
+            <a href="#" id="twitterIcon">
+            <img src="img/twitter.png" alt="Twitter Icon">
+            </a>
+         </div>
+         <div class="footer-text">
+            <p>E-mail: evergane.br@gmail.com Telefone: (11) 5682-7300</p>
+         </div>
+      </footer>
+      <script src="sticky-header.js"></script>
+      <script src="login-script.js"></script>
+      <script src="icons-footer.js"></script>
+   </body>
+</html>

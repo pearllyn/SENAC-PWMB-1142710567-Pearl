@@ -1,0 +1,155 @@
+header{
+background-color: #000000;
+height: 11vh;
+box-shadow: 2px 2px 5px 5px rgba(29, 41, 25, 0.137);
+}
+nav{
+display: flex;
+align-items: center;
+}
+*{
+margin: 0 auto;
+}
+header, nav, main, footer{
+width: auto;
+padding: 10px 20px;
+box-sizing: border-box;
+}
+.sticky {
+padding: 10px;
+text-align: right;
+position: sticky;
+top: 0; 
+z-index: 100; 
+height: 10vh;
+}
+.logos{
+display: flex;
+justify-content: space-between;
+margin-left: 25px;
+}
+.logo{
+width: 45px;
+height: 45px;
+}
+.evergane{
+color: #7FFF00;
+font-weight: 1000;
+font-size: 180%;
+padding: 5px;
+}
+nav a#ped-button{
+background-color: #7FFF00;
+color: #000000;
+}
+nav a#ped:hover{
+border: 1px solid #7FFF00;
+background-color: transparent;
+color: #7FFF00;
+}
+nav a#login-button{
+color: blue;
+background-color: #00c3ff2d;
+border: 1px solid blue;
+}
+nav a#login-button:hover{
+color: white;
+background-color: blue;
+border: 2px solid rgb(78, 78, 255);
+}
+nav{
+margin-top: -5px;
+margin-bottom: 8px;
+}
+nav a{
+color: #7FFF00;
+text-decoration: none;
+font-size: 75%;
+font-weight: 900;
+padding: 5px;
+margin-inline: 15px;
+text-transform: uppercase;
+}
+nav a:hover{
+background-color: #7FFF00;
+color: black;
+}
+.pedido{
+height: 1700px;
+background-color: #7FFF00;
+}
+.pedido h1{
+text-align: center;
+margin-top: 70px;
+font-size: 350%;
+font-weight: bolder;
+}
+.pedido-box{
+text-align: center;
+box-shadow: 2px 2px 5px 5px rgba(36, 36, 36, 0.137);
+padding: 25px;
+background-color: rgba(255, 255, 255, 0.938);
+}
+.text-box{
+padding: 20px;
+width: fit-content;
+}
+h1{
+margin-bottom: 15px;
+}
+#lista-pedidos{
+list-style: square;
+text-align: left;
+padding: 0;
+}
+#lista-pedidos li{
+margin-bottom: 15px;
+background-color: #00000007;
+padding: 10px;
+font-size: large;
+}
+.agradecimento-msg {
+font-size: 30px;
+margin-bottom: 20px;
+color: green;
+font-weight: bold;
+}
+.pedido-button{
+background-color: red;
+color: white;
+text-decoration: none;
+padding: 10px 20px;
+border-radius: 20px;
+font-weight: bold;
+font-size: large;
+display: flex;
+justify-content: center;
+width: 250px;
+}
+.pedido-button:hover{
+background-color: rgb(255, 29, 29);
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.137);
+}
+/*FOOTER*/
+.footer{
+background-color: #000000;
+color: #7FFF00;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 2px;
+font-size: large;
+font-weight: 900;
+height: 80px;
+}
+footer a{
+text-decoration: none;
+}
+.icons{
+display: flex;
+justify-items: left;
+gap: 20px;
+}
+.footer-text {
+text-align: right;
+}

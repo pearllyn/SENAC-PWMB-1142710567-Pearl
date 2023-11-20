@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <title>
+         Sobre
+      </title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="sobre.css">
+      <link rel="stylesheet" href="login.css">
+   </head>
+   <!-- HEADER -->
+   <body>
+      <header>
+         <nav>
+            <div class="logos">
+               <img class="logo" src="img/logo.png" alt="logo">
+               <div class="evergane"><b>EVERGANE</b></div>
+            </div>
+            <a href="index.html">Home</a>
+            <a id="sobre-button" href="sobre.html">Sobre</a>
+            <a href="menu.html">Menu</a>
+            <a href="cardapio.html">Cardápio Online</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="local.html">Horário e Local</a>
+            <a href="suporte.html">Suporte</a>
+            <a id="login-button" href="#login" onclick="exibirFormularioLogin()">Login</a>
+         </nav>
+      </header>
+      <!-- SOBRE -->
+      <div class="sobre">
+         <div id="sobre">
+            <br>
+            <div class="sobrenos-box">
+               <h1>Sobre Nós</h1>
+               <p>Bem-vindo ao Restaurante Vegano EVERGANE! <br>
+                  Somos um novo restaurante vegano comprometido em oferecer refeições deliciosas,<br>
+                  saudáveis e sustentáveis para todos os amantes de comida vegana.
+               </p>
+               <p>Nossa missão é proporcionar experiências gastronômicas excepcionais, combinando sabores naturais,<br>
+                  ingredientes frescos e um toque de criatividade em todos os pratos que servimos.
+               </p>
+            </div>
+            <br>
+            <div class="box">
+               <div class="filoso">
+                  <h4>Nossa Filosofia</h4>
+                  <p>A filosofia do restaurante Evergane é alicerçada na crença de que 
+                     a comida pode ser uma força positiva para o nosso planeta e para a 
+                     saúde de todos. Buscamos promover a sustentabilidade, o respeito pelos animais 
+                     e a diversidade culinária por meio de pratos veganos deliciosos e criativos. 
+                     Acreditamos que a comida à base de plantas não apenas nutre o corpo, 
+                     mas também nutre a alma, inspirando um estilo de vida mais consciente e saudável. 
+                     No Evergane, nossa filosofia é uma celebração da natureza e uma ode à inovação culinária, 
+                     convidando todos a experimentar a magia de uma alimentação vegana.
+                  </p>
+               </div>
+               <div class="image">
+                  <img src="img/chef.jpg" alt="Your Image">
+               </div>
+            </div>
+            <div class="box">
+               <div class="image-left">
+                  <img src="img/veganfood2.jpg" alt="Your Image">
+               </div>
+               <div class="pratos">
+                  <h4>Nossos Pratos</h4>
+                  <p>O Evergane é um restaurante vegano que oferece pratos deliciosos 
+                     e criativos à base de plantas. Com ingredientes frescos e sustentáveis, 
+                     suas opções vão muito além das saladas, incluindo hambúrgueres, massas e mais. 
+                     É uma experiência gastronômica que celebra a diversidade de sabores e promove 
+                     um estilo de vida sustentável. Venha desfrutar da culinária vegana no Evergane 
+                     e descubra como a comida à base de plantas pode ser deliciosa e nutritiva.
+                  </p>
+               </div>
+            </div>
+            <div class="visite-box">
+               <a href="local.html" class="visite-button">Visite-nos</a>
+               <p>Estamos ansiosos para recebê-lo em nosso restaurante e compartilhar o nosso amor pela comida vegana.<br>
+                  Venha experimentar pratos incríveis que não apenas alimentam o corpo, mas também nutrem a alma.
+               </p>
+               <br>
+            </div>
+         </div>
+      </div>
+      <!-- LOGIN -->
+      <div id="modal-login" class="modal">
+         <div id="container-login">
+            <span class="close-button" onclick="esconderFormularioLogin()">&times;</span>
+            <h2>Login</h2>
+            <form id="formulario-login">
+               <label for="nome-usuario">Nome de Usuário:</label>
+               <input type="text" id="nome-usuario" name="nome-usuario" required>
+               <label for="senha">Senha:</label>
+               <input type="password" id="senha" name="senha" required onkeypress="tratarTeclaPressionada(event)">
+               <button type="button" onclick="validarLogin()">Entrar</button>
+            </form>
+            <p id="mensagem-bem-vindo" style="display:none;"></p>
+         </div>
+      </div>
+      <footer class="footer">
+         <div class="icons">
+            <a href="#" id="instagramIcon">
+            <img src="img/insta.png" alt="Instagram Icon">
+            </a>
+            <a href="#" id="twitterIcon">
+            <img src="img/twitter.png" alt="Twitter Icon">
+            </a>
+         </div>
+         <div class="footer-text">
+            <p>E-mail: evergane.br@gmail.com Telefone: (11) 5682-7300</p>
+         </div>
+      </footer>
+      <script src="sticky-header.js"></script>
+      <script src="login-script.js"></script>
+      <script src="icons-footer.js"></script>
+   </body>
+</html>

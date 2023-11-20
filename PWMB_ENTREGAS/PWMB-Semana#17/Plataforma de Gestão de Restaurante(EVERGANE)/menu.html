@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <title>
+         Faça seu Pedido agora!
+      </title>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="login.css">
+      <link rel="stylesheet" href="menu.css">
+   </head>
+   <!-- HEADER -->
+   <body>
+      <header>
+         <nav>
+            <div class="logos">
+               <img class="logo" src="img/logo.png" alt="logo">
+               <div class="evergane"><b>EVERGANE</b></div>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="sobre.html">Sobre</a>
+            <a id="menu-btn" href="menu.html">Menu</a>
+            <a href="cardapio.html">Cardápio Online</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="local.html">Horário e Local</a>
+            <a href="suporte.html">Suporte</a>
+            <a id="login-button" href="#login" onclick="exibirFormularioLogin()">Login</a>
+         </nav>
+      </header>
+      <!-- MENU -->
+      <div class="imagem">
+         <h1>MENU</h1>
+         <p>Comida 100% vegana!</p>
+         <br>
+      </div>
+      <main class="menu">
+         <!-- ICONS -->
+         <div class="icons-container">
+            <div class="icon-container">
+               <div id="promo-icon" class="icon">
+                  <img src="img/iconpromo.png" alt="Icon 1">
+               </div>
+               <a href="#promo" class="button">Promoção</a>
+            </div>
+            <div class="icon-container">
+               <div id="entrada-icon" class="icon">
+                  <img src="img/iconentradas.png" alt="Icon 2">
+               </div>
+               <a href="#entradas" class="button">Entradas</a>
+            </div>
+            <div class="icon-container">
+               <div id="prato-icon" class="icon">
+                  <img src="img/iconpratos.png" alt="Icon 3">
+               </div>
+               <a href="#pratos" class="button">Pratos Principais</a>
+            </div>
+            <div class="icon-container">
+               <div id="salada-icon" class="icon">
+                  <img src="img/iconsalad.png" alt="Icon 4">
+               </div>
+               <a href="#saladas" class="button">Saladas</a>
+            </div>
+            <div class="icon-container">
+               <div id="sobremesa-icon" class="icon">
+                  <img src="img/iconsobremesa.png" alt="Icon 5">
+               </div>
+               <a href="#sobremesas" class="button">Sobremesas</a>
+            </div>
+            <div class="icon-container">
+               <div id="bebida-icon" class="icon">
+                  <img src="img/iconbebida.png" alt="Icon 6">
+               </div>
+               <a href="#bebidas" class="button">Bebidas</a>
+            </div>
+         </div>
+         <div class="menu-box">
+            <h1>Faça seu Pedido!</h1>
+            <div id="promo" class="nome-categoria">Promoção</div>
+            <form action="pedidos.html" class="category-container">
+               <div class="category-item">
+                  <div onclick="openForm('Espetinhos de vegetais')">
+                     <input type="radio" id="promo1" name="opcao" value="promo1">
+                     <div class="option-label">
+                        <img class="food-image" src="img/espetinhosdevegetais.jpg" alt="Promoção 1">
+                        <div class="food-info">
+                           <span class="food-name">Espetinhos de vegetais</span>
+                           <p class="food-description">1 vegatal + 1 salsicha vegetal na grelha</p>
+                           <div class="promo-price"><span class="price">R$ 16.36</span><span class="price-cancelled">R$ 20.78</span></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <div onclick="openForm('Hambúrguer de frango vegetal')">
+                     <input type="radio" id="promo2" name="opcao" value="promo2">
+                     <div class="option-label">
+                        <img class="food-image" src="img/haburgerdefrango.jpg" alt="Promoção 2">
+                        <div class="food-info">
+                           <span class="food-name">Hambúrguer de frango vegetal</span>
+                           <p class="food-description">com maionese de limão siciliano</p>
+                           <div class="promo-price"><span class="price">R$ 20.00</span><span class="price-cancelled">R$ 25.78</span></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+            <div id="entradas" class="nome-categoria">Entradas</div>
+            <form action="pedidos.html" class="category-container">
+               <div class="category-item">
+                  <div onclick="openForm('Bolo de milho salgado')">
+                     <input type="radio" id="entrada1" name="opcao" value="entrada1">
+                     <div class="option-label">
+                        <img class="food-image" src="img/bolodemilho.jpg" alt="Entrada 1">
+                        <div class="food-info">
+                           <span class="food-name">Bolo de milho salgado</span>
+                           <p class="food-description">com frango</p>
+                           <span class="price">R$ 40.99</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <div onclick="openForm('Pulled Pork')">
+                     <input type="radio" id="entrada2" name="opcao" value="entrada2">
+                     <div class="option-label">
+                        <img class="food-image" src="img/tacopulledpork.jpg" alt="Entrada 2">
+                        <div class="food-info">
+                           <span class="food-name">Pulled Pork</span>
+                           <p class="food-description">2 com quiabo e picles de rabanete</p>
+                           <span class="price">R$ 28.32</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+            <div id="pratos" class="nome-categoria">Pratos Principais</div>
+            <form action="pedidos.html" class="category-container">
+               <div class="category-item">
+                  <div onclick="openForm('Wings de couve-flor vegano')">
+                     <input type="radio" id="prato1" name="opcao" value="prato1">
+                     <div class="option-label">
+                        <img class="food-image" src="img/wingsdecouve-flor.jpg" alt="Prato 1">
+                        <div class="food-info">
+                           <span class="food-name">Wings de couve-flor vegano</span>
+                           <p class="food-description">5 wings veganas + molho</p>
+                           <span class="price">R$ 40.73</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <div onclick="openForm('Bife Com Batatas Fritas')">
+                     <input type="radio" id="prato2" name="opcao" value="prato2">
+                     <div class="option-label">
+                        <img class="food-image" src="img/bifebatatas.jpg" alt="Prato 2">
+                        <div class="food-info">
+                           <span class="food-name">Bife Com Batatas Fritas</span>
+                           <p class="food-description">com arroz, feijão e salada</p>
+                           <span class="price">R$ 30.00</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <div onclick="openForm('Filé de Frango ao Molho')">
+                     <input type="radio" id="prato3" name="opcao" value="prato3">
+                     <div class="option-label">
+                        <img class="food-image" src="img/saladafiledefrango.png" alt="Prato 3">
+                        <div class="food-info">
+                           <span class="food-name">Filé de Frango ao Molho</span>
+                           <p class="food-description">de laranja com salada de alface mista</p>
+                           <span class="price">R$ 31.99</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+            <form action="pedidos.html" class="category-container">
+               <div class="category-item">
+                  <div onclick="openForm('Macarrão a Bolonhesa')">
+                     <input type="radio" id="prato4" name="opcao" value="prato4">
+                     <div class="option-label">
+                        <img class="food-image" src="img/macarraoabolonhesa.jpg" alt="Prato 4">
+                        <div class="food-info">
+                           <span class="food-name">Macarrão a Bolonhesa</span>
+                           <p class="food-description">com carne moida</p>
+                           <span class="price">R$ 34.63</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+            <div id="saladas" class="nome-categoria">Saladas</div>
+            <form action="pedidos.html" class="category-container">
+               <div class="category-item">
+                  <div onclick="openForm('Salada de macarrão com molho')">
+                     <input type="radio" id="salada1" name="opcao" value="salada1">
+                     <div class="option-label">
+                        <img class="food-image" src="img/saladademacarrão.jpg" alt="Salada 1">
+                        <div class="food-info">
+                           <span class="food-name">Salada de macarrão com molho</span>
+                           <p class="food-description">cremoso vegano</p>
+                           <span class="price">R$ 30.78</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <div onclick="openForm('Salada de grão-de-bico')">
+                     <input type="radio" id="salada2" name="opcao" value="salada2">
+                     <div class="option-label">
+                        <img class="food-image" src="img/saladamediterranea.jpg" alt="Salada 2">
+                        <div class="food-info">
+                           <span class="food-name">Salada de grão-de-bico</span>
+                           <p class="food-description">com macarrão</p>
+                           <span class="price">R$ 30.80</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <div onclick="openForm('Salada com frango vegano')">
+                     <input type="radio" id="salada3" name="opcao" value="salada3">
+                     <div class="option-label">
+                        <img class="food-image" src="img/saladacomfrango.jpg" alt="Salada 3">
+                        <div class="food-info">
+                           <span class="food-name">Salada com frango vegano</span>
+                           <p class="food-description">4 frangos empanados</p>
+                           <span class="price">R$ 38.99</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+            <div id="sobremesas" class="nome-categoria">Sobremesas</div>
+            <form action="pedidos.html" class="category-container">
+               <div class="category-item">
+                  <div onclick="openForm('Amendoim caramelizado')">
+                     <input type="radio" id="sobremesa1" name="opcao" value="sobremesa1">
+                     <div class="option-label">
+                        <img class="food-image" src="img/amendoimcaramel.jpg" alt="Sobremesa 1">
+                        <div class="food-info">
+                           <span class="food-name">Amendoim caramelizado</span>
+                           <p class="food-description">serve 1 pessoa</p>
+                           <span class="price">R$ 10.00</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <div onclick="openForm('Brownie de abacate vegano')">
+                     <input type="radio" id="sobremesa2" name="opcao" value="sobremesa2">
+                     <div class="option-label">
+                        <img class="food-image" src="img/browniedeabacate.jpg" alt="Sobremesa 2">
+                        <div class="food-info">
+                           <span class="food-name">Brownie de abacate vegano</span>
+                           <p class="food-description">serve 1 pessoa</p>
+                           <span class="price">R$ 9.99</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <div onclick="openForm('Pão de melado vegano')">
+                     <input type="radio" id="sobremesa3" name="opcao" value="sobremesa3">
+                     <div class="option-label">
+                        <img class="food-image" src="img/paodemelado.jpg" alt="Sobremesa 3">
+                        <div class="food-info">
+                           <span class="food-name">Pão de melado vegano</span>
+                           <p class="food-description">quantidade 1</p>
+                           <span class="price">R$ 9.99</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+            <form action="pedidos.html" class="category-container">
+               <div class="category-item">
+                  <div onclick="openForm('Bolo de abóbora vegano')">
+                     <input type="radio" id="sobremesa4" name="opcao" value="sobremesa4">
+                     <div class="option-label">
+                        <img class="food-image" src="img/bolodeabobora.jpg" alt="Sobremesa 4">
+                        <div class="food-info">
+                           <span class="food-name">Bolo de abóbora vegano</span>
+                           <p class="food-description">sem glúten serve 1 pessoa</p>
+                           <span class="price">R$ 10.99</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+            <div id="bebidas" class="nome-categoria">Bebidas</div>
+            <form action="pedidos.html" class="category-container">
+               <div class="category-item">
+                  <div onclick="openForm('“Milkshake” de Banana e Cacau')">
+                     <input type="radio" id="bebida1" name="opcao" value="bebida1">
+                     <div class="option-label">
+                        <img class="food-image" src="img/Milkshakedebanana.jpg" alt="Bebida 1">
+                        <div class="food-info">
+                           <span class="food-name">“Milkshake” de Banana e Cacau</span>
+                           <p class="food-description">serve até 1 pessoa</p>
+                           <span class="price">R$ 18.90</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <div onclick="openForm('Cha de Hibisco e tangerina')">
+                     <input type="radio" id="bebida2" name="opcao" value="bebida2">
+                     <div class="option-label">
+                        <img class="food-image" src="img/chadehibisco.jpg" alt="Bebida 2">
+                        <div class="food-info">
+                           <span class="food-name">Cha de Hibisco e tangerina</span>
+                           <p class="food-description">com canela serve 1 pessoa</p>
+                           <span class="price">R$ 17.99</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="category-item">
+                  <div onclick="openForm('Suco de Maracujá com Couve')">
+                     <input type="radio" id="bebida3" name="opcao" value="bebida3">
+                     <div class="option-label">
+                        <img class="food-image" src="img/sucoMaracuja.jpg" alt="Bebida 3">
+                        <div class="food-info">
+                           <span class="food-name">Suco de Maracujá com Couve</span>
+                           <p class="food-description">serve 1 pessoa</p>
+                           <span class="price">R$ 15.00</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </form>
+            <!-- FORM -->
+            <div id="pedido-form" class="form-pedido">
+               <span id="close-button" onclick="closeForm()">X</span>
+               <h3>Preencha os detalhes do pedido</h3>
+               <form id="formularioPedido" onsubmit="submitForm(); return false;">
+                  <label for="nome-cliente">Nome do Cliente:</label>
+                  <input type="text" id="nome-cliente" name="nome-cliente" required><br>
+                  <label for="quantidade">Quantidade:</label>
+                  <input type="number" id="quantidade" name="quantidade" required><br>
+                  <label for="observacao">Observação:</label><br>
+                  <textarea id="observacao" name="observacao"></textarea>
+                  <br>
+                  <label for="nome-pedido">Nome do Pedido:</label>
+                  <input type="text" id="nome-pedido" name="nome" required readonly><br>
+                  <label for="formaPagamento">Forma de Pagamento:</label>
+                  <select id="formaPagamento" name="formaPagamento" required>
+                     <option value="Cartao de credito">Cartão de crédito</option>
+                     <option value="Cartao de debito">Cartão de débito</option>
+                     <option value="Dinheiro">Dinheiro</option>
+                     <option value="PIX">PIX</option>
+                  </select>
+                  <br>
+                  <button class="form-button" type="submit">Enviar Pedido</button>
+               </form>
+            </div>
+         </div>
+      </main>
+      <!-- LOGIN -->
+      <div id="modal-login" class="modal">
+         <div id="container-login">
+            <span class="close-button" onclick="esconderFormularioLogin()">&times;</span>
+            <h2>Login</h2>
+            <form id="formulario-login">
+               <label for="nome-usuario">Nome de Usuário:</label>
+               <input type="text" id="nome-usuario" name="nome-usuario" required>
+               <label for="senha">Senha:</label>
+               <input type="password" id="senha" name="senha" required onkeypress="tratarTeclaPressionada(event)">
+               <button type="button" onclick="validarLogin()">Entrar</button>
+            </form>
+            <p id="mensagem-bem-vindo" style="display:none;"></p>
+         </div>
+      </div>
+      <footer class="footer">
+         <div class="icons">
+            <a href="#" id="instagramIcon">
+            <img src="img/insta.png" alt="Instagram Icon">
+            </a>
+            <a href="#" id="twitterIcon">
+            <img src="img/twitter.png" alt="Twitter Icon">
+            </a>
+         </div>
+         <div class="footer-text">
+            <p>E-mail: evergane.br@gmail.com Telefone: (11) 5682-7300</p>
+         </div>
+      </footer>
+      <script src="sticky-header.js"></script>
+      <script src="login-script.js"></script>
+      <script src="menu-form.js"></script>
+      <script src="icons-footer.js"></script>
+   </body>
+</html>
